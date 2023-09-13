@@ -1,4 +1,4 @@
-# Un-robot-daccuiel-avec-reconnaissance-faciale-vocale-et-detection-dobjet:
+#smart surveillance robot:
 
 DESCRIPTION:
 The robot would consist of a Raspberry Pi 4 computer connected to a camera module for image and video capture, a microphone for audio input, a speaker for audio output, and sensors for detecting objects. The robot could be mounted on a wheeled or stationary base, depending on the desired mobility.
