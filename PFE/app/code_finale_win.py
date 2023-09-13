@@ -62,8 +62,8 @@ def markAttendance(name):
 #sending the alert mails
 def send_msg(image_path, audio_path):
     message = MIMEMultipart()
-    message["from"] = "amineaymenbk12300@gmail.com"
-    message["to"] = "AymenBoukadida@proton.me"
+    message["from"] = "from email"
+    message["to"] = "to email"
     message["subject"] = "Unknown Person Detected"
     message.attach(MIMEText("This is the picture of the Unknown person up front!!"))
 
@@ -82,7 +82,7 @@ def send_msg(image_path, audio_path):
     with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login("amineaymenbk12300@gmail.com", "sdlinunhkitnctwa")
+        smtp.login("from email", "password")
         smtp.send_message(message)
         print("Sent the image and audio of the Unknown")
 
