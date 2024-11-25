@@ -144,14 +144,14 @@ def check_pass():
                     engine.runAndWait()
                    
 def sms_alert():
-    client = vonage.Client(key="db5766e1", secret="mTpmOqPC7xBtCpJz")
+    client = vonage.Client(key="db5766e1", secret="secret")
     sms = vonage.Sms(client)
 
 
     responseData = sms.send_message(
     {
         "from": "Vonage APIs",
-        "to": "21658995370",
+        "to": "numero",
         "text": "This is your security system, Please Check your E-mail for intrusion information NOW",
     }
 )
